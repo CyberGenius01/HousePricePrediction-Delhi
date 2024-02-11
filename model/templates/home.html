@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% block title %}
+   Home Page
+{% endblock %}
+{% block content %}
+<div class="container">
+    <form method="POST" class="model-form">
+        {{ form.hidden_tag() }}
+        <div class="form-heading">Enter the details of House</div>
+
+        <div class="label">{{ form.area.label() }}</div>
+        {{ form.area(class='input-field', placeholder='Enter Area') }}
+
+        <div class="label">{{ form.lattitude.label() }}</div>
+        {{ form.lattitude(class='input-field', placeholder='Enter latitude') }}
+
+        <div class="label">{{ form.longitude.label() }}</div>
+        {{ form.longitude(class='input-field', placeholder='Enter longitude') }}
+
+        <div class="label">{{ form.Bedrooms.label() }}</div>
+        {{ form.Bedrooms(class='input-field', placeholder='Enter number of bedrooms') }}
+
+        <div class="label">{{ form.Bathrooms.label() }}</div>
+        {{ form.Bathrooms(class='input-field', placeholder='Enter number of bathrooms') }}
+
+        <div class="label">{{ form.Balcony.label() }}</div>
+        {{ form.Balcony(class='input-field', placeholder='Enter number of balconies') }}
+
+        <div class="label">{{ form.parking.label() }}</div>
+        {{ form.parking(class='input-field', placeholder='Enter number of parkings') }}
+
+        <div class="label">{{ form.Lift.label() }}</div>
+        {{ form.Lift(class='input-field', placeholder='Enter number of lifts') }}
+
+        <div class="label">{{ form.Status.label() }}</div>
+        {{ form.Status(class='input-field') }}
+
+        <div class="label">{{ form.Furnished_status.label() }}</div>
+        {{ form.Furnished_status(class='input-field') }}
+
+        <div class="label">{{ form.neworold.label() }}</div>
+        {{ form.neworold(class='input-field') }}
+
+        <div class="label">{{ form.type_of_building.label() }}</div>
+        {{ form.type_of_building(class='input-field') }}
+
+        {{ form.submit(class='submit-btn') }}
+
+    </form>
+</div>
+{% endblock %}

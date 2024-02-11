@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}
+    Result Page
+{% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="form-heading">The predicted price for the house is</div>
+        <div class="result-box">Rs. {{result}} </div>
+        <div class="new-prediction"><a href="{{url_for('home_page')}}">Predict another Price</a></div>
+    </div>
+{% endblock %}

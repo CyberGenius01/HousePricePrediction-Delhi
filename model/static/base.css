@@ -1,0 +1,118 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 120px;
+    background-color: rgb(22 22 22)
+}
+
+h1 {
+    font-size: 45px !important;
+    font-weight: 900 !important;
+}
+
+.footer {
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 8%;
+    font-size: 20px;
+    background-color: rgb(0 0 0);
+    position: relative;
+    bottom: 0;
+}
+
+.container {
+    width: 600px !important;
+    margin: 5% auto;
+    padding: 20px 30px;
+    font-size: 15px;
+    background-color: white;
+    border-radius: 20px;
+    border: none;
+}
+
+.form-heading {
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    margin: 10px 0 20px 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.input-field {
+    width: 100%;
+    padding: 5px 10px;
+    margin: 5px 0;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    color: gray;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid lightgray;
+}
+
+    .input-field:hover {
+        border: 2px solid rgb(245, 120, 0)
+    }
+
+.location-field{
+    cursor: pointer;
+}
+
+.label {
+    width: 100%;
+    font-size: 21px;
+    padding: 0 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 20px 0;
+    font-size: 21px;
+    font-family: 'Quicksand';
+    color: white;
+    border-radius: 30px;
+    font-weight: bolder !important;
+    border: none;
+    background-color: rgb(245, 120, 0);
+    cursor: pointer;
+}
+
+.result-box {
+    font-size: 38px;
+    font-weight: 700;
+    font-family: 'Quicksand';
+    text-align: center;
+    width: 100%;
+}
+
+.new-prediction {
+    margin: 60px 0 10px 0 !important;
+    padding: 10px 15px;
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(245, 120, 0);
+    cursor: pointer;
+    text-align: center
+}
+
+    .new-prediction a {
+        font-size: 21px;
+        font-family: 'Quicksand';
+        color: white;
+        font-weight: bolder !important;
+    }
+
+    .new-prediction a:hover {
+        text-decoration: none;
+        color: white;
+    }
